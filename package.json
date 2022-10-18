@@ -1,0 +1,30 @@
+{
+  "name": "next-ssr-with-apollo",
+  "version": "1.0.0",
+  "description": "Opinionated HOC to integrate Apollo into an SSR Next.js app",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zenflow/next-ssr-with-apollo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zenflow/next-ssr-with-apollo/issues"
+  },
+  "author": {
+    "name": "Matthew Francis Brunetti",
+    "email": "zenflow87@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "typescript": "^4.8.4"
+  }
+}
