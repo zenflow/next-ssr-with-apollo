@@ -64,7 +64,9 @@ export function createWithApollo<TCache = NormalizedCacheObject>(
       );
     };
 
-    AppWithApollo.getInitialProps = async (ctx: AppContext) => {
+    AppWithApollo.getInitialProps = async (
+      ctx: AppContext
+    ): Promise<AppInitialProps & ApolloAppProps<TCache>> => {
       const apolloClient = createClient(ctx.ctx.req?.headers);
 
       const getInitialProps = App.getInitialProps || NextApp.getInitialProps;
