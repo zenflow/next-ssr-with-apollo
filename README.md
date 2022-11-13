@@ -24,7 +24,7 @@ or the [unpredictabile side-effects of these features](https://github.com/apollo
 Inside your Next.js project:
 
 ```
-npm install @apollo/client next-ssr-with-apollo
+npm install graphql @apollo/client next-ssr-with-apollo
 ```
 
 ## Usage
