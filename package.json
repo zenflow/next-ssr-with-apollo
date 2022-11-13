@@ -1,6 +1,6 @@
 {
   "name": "next-ssr-with-apollo",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Opinionated HOC to integrate Apollo into an SSR Next.js app",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,12 +32,14 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "next": "^13.0.3",
-    "@apollo/client": "^3.7.1"
+    "@apollo/client": "^3.7.1",
+    "next": "^13.0.3"
   },
   "devDependencies": {
     "@apollo/client": "^3.7.1",
     "@playwright/test": "^1.27.1",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
     "@types/node": "^18.11.9",
     "@types/prettier": "^2.7.1b",
     "@types/react": "^18.0.25",
@@ -50,6 +52,7 @@
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "semantic-release": "^19.0.5",
     "shx": "^0.3.4",
     "typescript": "^4.8.4"
   }
