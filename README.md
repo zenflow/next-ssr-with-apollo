@@ -2,8 +2,6 @@
 Opinionated HOC to integrate Apollo into an SSR Next.js app
 
 [![npm version](https://img.shields.io/npm/v/next-ssr-with-apollo)](http://npmjs.com/package/next-ssr-with-apollo)
-[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability-percentage/zenflow/next-ssr-with-apollo?logo=Code%20Climate)](https://codeclimate.com/github/zenflow/next-ssr-with-apollo)
-[![LGTM alerts](https://img.shields.io/lgtm/alerts/github/zenflow/next-ssr-with-apollo?logo=lgtm)](https://lgtm.com/projects/g/zenflow/next-ssr-with-apollo/)
 [![Known Vulnerabilities](https://snyk.io/test/github/zenflow/next-ssr-with-apollo/badge.svg?targetFile=package.json)](https://snyk.io/test/github/zenflow/next-ssr-with-apollo?targetFile=package.json)
 [![GitHub issues welcome](https://img.shields.io/badge/issues-welcome-brightgreen.svg?logo=GitHub)](https://github.com/zenflow/next-ssr-with-apollo/issues)
 [![GitHub pull requests welcome](https://img.shields.io/badge/pull%20requests-welcome-brightgreen.svg?logo=GitHub)](https://github.com/zenflow/next-ssr-with-apollo/pulls)
