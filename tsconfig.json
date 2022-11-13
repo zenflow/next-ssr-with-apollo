@@ -7,9 +7,9 @@
   ],
   "compilerOptions": {
     "target": "es5",
-    "lib": ["ESNext", "DOM"],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "jsx": "react",
-    "module": "commonjs",
+    "module": "esnext",
     "moduleResolution": "node",
     "declaration": true,
     "sourceMap": true,

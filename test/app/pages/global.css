@@ -1,0 +1,45 @@
+header, header > * {
+  display: flex;
+}
+
+header {
+  gap: .5em;
+}
+
+header > * {
+  background: #eee;
+  padding: .5em;
+}
+
+header > .loader {
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  align-self: center;
+}
+
+header > .loader.is-loading {
+  background: blue;
+}
+
+header > nav {
+  flex: 1;
+}
+
+header > nav > a {
+  margin: .4em;
+  color: darkblue;
+  text-decoration: none;
+}
+
+header > nav > a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header > .where-rendered, header > .is-awesome {
+  width: 8em;
+  align-items: center;
+  justify-content: center;
+}
+
