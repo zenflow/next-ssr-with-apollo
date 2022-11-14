@@ -11,7 +11,8 @@ import {
   ApolloProvider,
   NormalizedCacheObject,
 } from "@apollo/client";
-import { getDataFromTree } from "@apollo/client/react/ssr";
+import { getMarkupFromTree } from "@apollo/client/react/ssr";
+import reactSsrPrepass from "react-ssr-prepass";
 import { MockRouterContext } from "./internal/MockRouterContext";
 import { CreateWithApolloOptions } from "./CreateWithApolloOptions";
 
@@ -77,16 +78,19 @@ export function createWithApollo<TCache = NormalizedCacheObject>(
 
       try {
         // Avoid using ctx.AppTree until it works client-side https://github.com/vercel/next.js/pull/23721
-        await getDataFromTree(
-          <MockRouterContext ctx={ctx}>
-            <AppWithApollo
-              Component={ctx.Component}
-              router={ctx.router}
-              {...props}
-              apolloClient={apolloClient}
-            />
-          </MockRouterContext>
-        );
+        await getMarkupFromTree({
+          renderFunction: async (tree) => reactSsrPrepass(tree).then(() => ""),
+          tree: (
+            <MockRouterContext ctx={ctx}>
+              <AppWithApollo
+                Component={ctx.Component}
+                router={ctx.router}
+                {...props}
+                apolloClient={apolloClient}
+              />
+            </MockRouterContext>
+          ),
+        });
       } catch (error) {
         console.error("Error from getDataFromTree", error);
       }

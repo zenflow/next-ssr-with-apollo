@@ -1,16 +1,27 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Router, useRouter } from "next/router";
+import Head from "next/head";
 import Link from "next/link";
 import { gql, useQuery } from "@apollo/client";
 
 export const Header: React.FC = () => {
   return (
     <header>
+      <Title />
       <Nav />
       <MaybeIsAwesome />
       <WhereRendered />
       <Loader />
     </header>
+  );
+};
+
+const Title: React.FC = () => {
+  const router = useRouter();
+  return (
+    <Head>
+      <title>{`test app - ${router.asPath}`}</title>
+    </Head>
   );
 };
 
