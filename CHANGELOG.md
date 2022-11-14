@@ -1,5 +1,12 @@
 # Changelog
 
+# [1.1.0](https://github.com/zenflow/next-ssr-with-apollo/compare/v1.0.1...v1.1.0) (2022-11-14)
+
+
+### Features
+
+* use simplified & lightweight react-ssr-prepass for prerendering ([2d1390e](https://github.com/zenflow/next-ssr-with-apollo/commit/2d1390eeff69a00c3d94334b33ab92c28c964efb))
+
 ## [1.0.1](https://github.com/zenflow/next-ssr-with-apollo/compare/v1.0.0...v1.0.1) (2022-11-13)
 
 
